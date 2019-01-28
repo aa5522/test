@@ -1,0 +1,650 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.div1{
+	padding:20px 150px;
+	margin:0px 80px;
+}
+.div2{
+	margin:50px 30px 0px 0px;
+}
+.f1{
+	float:left;
+	width: 245px;
+	margin:5px;
+ }
+a{
+	text-decoration:none;
+}
+img{
+	border:0;
+	display: block;/*快状化图像*/
+}
+ul{
+	list-style:none;
+}
+.clear:after{
+	display:block;
+	content:".";
+	height:0;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+body{
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+.juzhong {
+	text-align:center;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	position: relative;
+}
+.juzhong img{
+	width: 240px;
+	height: 240px;
+	background:#EEE;
+	margin:10px;
+	}
+.juzhong h3 a{
+	text-align:center;
+	color: #000;
+}
+.juzhong a:hover{
+	color:#C96;
+}
+.juzhong p{
+	text-align:center;
+	color:#C8C8C8;
+}
+.juzhong span{
+	text-align:center;
+	color:#F30;
+}
+.juzhong strike{
+	color:#CCC;
+	text-align:center;
+}
+
+
+
+.search{
+	width:460px;
+	height:100px;
+	padding:20px 0px 0px 20px;
+}
+.quanbu a{
+	color:#000;
+	padding-right:20px;
+	margin:0px 5px;
+}
+.quanbu ul a:hover{
+	color:#C96;
+}
+.quanbu {
+	text-decoration:none;
+	color:#000;
+	clear: both;
+	width: 960px;
+	margin:15px 2px 0px 0px;
+	height: 45px;
+}
+.quanbu ul{
+	color:#CCC;
+	padding: 0 0 0 10px;
+	margin: 0 auto;
+	height: 45px;
+	list-style: none;
+}
+.quanbu ul li{
+	float:left;
+	padding-right: 5px;
+}
+
+.quanbu  li.current a, .quanbu  li a:hover {
+	color:#FC9;
+	text-decoration: none;
+}
+.quanbu ul li b{
+	color:#C96;
+	font-weight:100;
+}
+.zhongjian p{
+	color:#CCC;
+}
+.wangye_top {
+	clear: both;
+	width: 960px;
+	padding: 50px 0px;
+}
+.wangye_top p {
+	margin: 0px;
+	padding: 0px;
+	color:#CCC;
+}
+#wangye_top .top_zong {
+	float: left;
+	width: 215px;
+	margin-left: 20px;
+}
+#wangye_top .top_zong img {
+	margin-bottom: 15px;
+	border: 5px solid #e1e0e0;
+}
+.tupiankuai{
+	padding:10px;
+}
+
+
+
+
+.tag {
+	line-height: 1.5;
+	background:#F7F7F7;
+	border: 1px #CC9966 solid;
+	border-radius: 5px; /*圆角矩形*/
+	text-align: center;
+	position: absolute;/*绝对定位，参照物为父级容器，因为父级容器含有相对定位的属性*/
+	top: 18px;
+	left: 23px;
+	color:#C96;
+}
+
+.b1 {
+	background: #F90;
+	color:#FFF;
+	padding: 0px 5px 3px 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom:0px;
+}
+.b2 {
+	background: #F24F00;
+	color: #FFF;
+	padding: 0px 5px 3px 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom:0px;
+}
+
+.search li a:hover{color:#C96;
+}
+
+
+.elevator{
+	position:fixed;
+	left:3%;
+	top:0px;
+	overflow:hidden;
+	
+}
+
+.category-type{ width:120px;
+        height:38px; 
+		line-height:34px;
+		color:#C00; 
+		background-color:#FFC;
+		margin-left:40px;margin-top: 200px;
+		
+	    border: 1px#CCCCCC solid; 
+		border-bottom:none;
+		text-align:center;
+	    margin-bottom:0px;
+		font-size:16px;
+		
+		}
+
+
+
+.normal-nav{ width:100px; 
+          height:390px;
+          margin-left:40px;
+          margin-bottom: 400px;
+          border:1px #CCCCCC solid; 
+          padding-left:10px;padding-right:10px;
+		 margin-top:0px;
+		 
+		  }
+
+.normal-nav li{ height:34px; 
+         line-height:34px;
+         font-size:10 px;color:#000;
+		 
+		 }
+
+.normal-nav li a{font-size:12px; 
+              color:#000; 
+			  }
+
+.normal-nav li a:hover{color:#F00;
+}
+
+.fli {
+	border-top: 1px solid #CCC; 
+}
+
+
+.juz {
+	 line-height:35px; 
+	 height:35px;
+	 float: right;
+	 padding-right:20px;
+	
+}
+
+.hh{color:#C00;}
+
+.juz2 {
+	 line-height:17px; 
+	 margin-top:0px;
+	 padding-top:0px;
+	 float: right;
+	 padding-right:20px;
+	 color:#C00;
+}
+.color {
+	color:#C00; font-size:12px;
+	font-weight:800px; font-family:"微软雅黑";
+}
+
+.juz3 {
+	 line-height:35px; 
+	 height:35px;
+	 float: right;
+	 padding-right:10px;
+	 }
+
+
+ </style>
+</head>
+
+<body>
+<div class="div1">
+
+ <div><a href="#"><img src="img/1 (13).jpg" width="1090" height="310";/></a></div>
+ 
+<div>
+<div class="search">
+  <div class="quanbu">
+    <ul >
+      <li>分类:</li>
+      <li><a href="#"><b>全部</b></a></li>
+      <li><a href="#">床品件套</a></li>
+      <li><a href="#">被枕</a></li>
+      <li><a href="#">家具</a></li>
+      <li><a href="#">灯具</a></li>
+      <li><a href="#">收纳</a></li>
+      <li><a href="#">布艺软装</a></li>
+      <li><a href="#">家饰</a></li>
+      <li><a href="#">旅行用品</a></li>
+      <li><a href="#">晾晒除味</a></li>
+      <li><a href="#">家庭医疗</a></li>
+      <li><a href="#">宠物</a></li>
+      </ul>
+       </div>
+       <hr style="border:1px dashed #CCC; width:220%" />    
+      
+      
+      <div class="quanbu">
+        <ul >
+          <li>配送地区:</li>
+          <li><a href="#"><b>全部</b></a></li>
+          <li><a href="#">香港</a></li>
+          <li><a href="#">澳门</a></li>
+          <li><a href="#">台湾</a></li>
+          <li><a href="#">日韩</a></li>
+          <li><a href="#">亚洲</a></li>
+          <li><a href="#">欧洲</a></li>
+          <li><a href="#">美洲</a></li>
+    </ul>
+    </div>
+    <hr style="border:1px dashed #CCC; width:220%" />         
+       
+       <div class="quanbu">
+         <ul class="current">
+           <li>排序:</li>
+           <li><a href="#"><b>默认</b></a></li>
+           <li><a href="#">价格</a></li>
+           <li><a href="#">上架时间</a></li>
+    </ul>
+    </div>
+    <hr style="border:1px dashed #CCC; width:220%" />   
+    
+   </div>
+       
+   </div>
+ </div> 
+   
+   <div class="clear"></div>
+
+ 
+    <div class="zhongjian div2">
+       <h2 align="center">床品件套</h2>
+       <p align="center">MUJI等品牌制造商出品</p>
+   
+   </div>
+ 
+ 
+ 
+   <div class="div1">
+            
+         
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (19).png" /></a>
+             <a href="#" class="tag">3色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">真丝枕套</a></h3>
+                <span>&yen;99</span>
+             </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>入门级奢品，真丝细润亲肤</p>
+                </div>
+     </div>
+          
+           
+           
+     <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (1).jpg"/></a>
+             <a href="#" class="tag">5色可选</a>
+              <div>
+                <span><a href="#" class="b1">爆品</a></span>&nbsp;<span><a href="#" class="b2">明星特惠价</a></span>
+                <h3><a href="#">全棉针织条纹四件套 新款</a></h3>
+                <span class="jubup">&yen;269 &nbsp; <span><strike>&yen;299</strike></span></span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>超柔针织棉，亲肤可裸睡</p>
+                </div>
+               </div>
+            
+         
+           
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (5).png" /></a>
+             <a href="#" class="tag">4色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">60s臻密绒磨毛四件套</a></h3>
+                <span>&yen;499</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>浅绒如脂臻密，高级莫兰迪色系</p>
+                </div>
+               </div>
+           
+           
+          
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (3).png" /></a>
+              <div>
+                <span><a href="#" class="b2">三石福利价</a><span>&nbsp;<span><a href="#" class="b2">满赠</a></span>
+                <h3><a href="#">21s素暖轻磨毛四件套</a></h3>
+                <span>&yen;309 &nbsp; <span><strike>&yen;399</strike></span></span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>厚实粗犷肌理感，越睡越舒适</p>
+                </div>
+               </div>
+         
+         <div class="clear"></div>
+        
+        
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (23).png" /></a>
+              <div class="tupiankuai">
+                <h3><a href="#">水洗棉间隔条纹四件套</a></h3>
+                <span>&yen;299</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>水洗慵懒会呼吸，日式简约条纹,床笠. . .款设计</p>
+                </div>
+               </div>
+               
+               
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (10).jpg"/></a>
+             <a href="#" class=" tag">3色可选</a>
+              <div>
+                <span><a href="#" class="b2">三石福利价</a><span>
+                <h3><a href="#">酒店风奢靡四件套</a></h3>
+                <span>&yen;539 &nbsp; <span><strike>&yen;659</strike></span></span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>埃及长绒棉，享5星奢眠</p>
+                </div>
+               </div>
+               
+               
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (6).jpg" /></a>
+              <div class="tupiankuai">
+                <h3><a href="#">秋遇&#8226;漫花开贡缎四件套</a></h3>
+                <span>&yen;439</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>经典暖调配色，随性美式加身</p>
+                </div>
+               </div>
+               
+               
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (14).jpg" /></a>
+              <div class="tupiankuai">
+                <h3><a href="#">秋遇&#8226;待叶归磨毛四件套</a></h3>
+                <span>&yen;499</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>全棉生态磨毛，温和厚软细腻</p>
+                </div>
+               </div>   
+               
+         <div class="clear"></div>
+        
+        
+         <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (15).png"/></a>
+              <div class="tupiankuai">
+                <h3><a href="#">挚&#8226;染色提花四件套</a></h3>
+                <span>&yen;999</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>新疆长绒棉+奢密缎纹，立体提花轻. . .    ..  奢现代</p>
+                </div>
+               </div> 
+               
+        <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (24).png"/></a>
+              <div class="tupiankuai">
+                <h3><a href="#">挚&#8226;商务简约提花四件套</a></h3>
+                <span>&yen;1999</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>140支脂密纯棉，双丝光工艺，轻奢. . .      ..美学</p>
+                </div>
+               </div>       
+         
+         
+                
+        <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (14).png"/></a>
+              <div class="tupiankuai">
+                <h3><a href="#">轻奢&#8226;蕨之语提花四件套</a></h3>
+                <span>&yen;799</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>400根如绸臻密，提花精致层次感</p>
+                </div>
+               </div>
+         
+         
+         
+         <div class="f1 juzhong">
+            <a href="#"><img src="img/1 (15).jpg"/></a>
+            <a href="#" class=" tag">3色可选</a>
+             <div>
+               <span><a href="#" class="b2">五折秒杀价</a><span>
+               <h3><a href="#">宫廷奢华真丝四件套</a></h3>
+               <span>&yen;1699 &nbsp; <span><strike>&yen;3399</strike></span></span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>100%桑蚕丝，丝滑润肤</p>
+                </div>
+               </div>
+               
+              <div class="clear"></div> 
+              
+              
+            <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (20).jpg"/></a>
+             <a href="#" class=" tag">3色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">自然棉麻四件套</a></h3>
+                <span>&yen;599</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>透气吸汗麻+亲肤柔软棉</p>
+                </div>
+               </div>
+               
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (11).jpg"/></a>
+             <a href="#" class=" tag">4色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">一人眠&#8226;针织三件套</a></h3>
+                <span>&yen;219</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>裸睡触感，一人放肆眠</p>
+                </div>
+               </div>
+               
+                     
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (2).jpg"/></a>
+             <a href="#" class=" tag">4色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">科尔玛小镇&#8226;碎花四件套</a></h3>
+                <span>&yen;399</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>纯正法式田园风，亲肤浪漫自由</p>
+                </div>
+               </div>
+               
+                           
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (12).jpg"/></a>
+              <div class="tupiankuai">
+                <h3><a href="#">北欧花鸟集四件套</a></h3>
+                <span>&yen;399</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>北欧色彩美学，2种质感，双享体验</p>
+                </div>
+               </div>
+               
+               <div class="clear"></div> 
+               
+          <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (8).jpg"/></a>
+             <a href="#" class=" tag">2色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">花漾初绽四件套</a></h3>
+                <span>&yen;299</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>独家花漾设计，纯棉透气亲肤</p>
+                </div>
+               </div>   
+               
+               
+         <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (17).jpg"/></a>
+             <a href="#" class=" tag">2色可选</a>
+              <div class="tupiankuai">
+                <h3><a href="#">趣味萌宠定制款四件套</a></h3>
+                <span>&yen;359</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>狗年定制款，高支高密棉</p>
+                </div>
+               </div>  
+               
+               
+           <div class="f1 juzhong">
+             <a href="#"><img src="img/1 (19).jpg"/></a>
+              <div class="tupiankuai">
+                <h3><a href="#">百子千孙婚庆十件套</a></h3>
+                <span>&yen;1599</span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>百子迎福，子孙满堂</p>
+                </div>
+               </div>      
+               
+               
+         <div class="f1 juzhong">
+            <a href="#"><img src="img/1 (17).png"/></a>
+             <div class="tupiankuai">
+               <h3><a href="#">唤自然&#8226;迷雾雨林四件套</a></h3>
+               <span>&yen;270 &nbsp; <span><strike>&yen;399</strike></span></span>
+               </div>
+                <div>
+                 <hr color="#CCCCCC" size="1px" width="60%" align="center" />  
+                 <p>甄选新疆棉，贡缎细密</p>
+                </div>
+               </div>
+</div> 
+
+<div class="clear"></div>
+
+
+
+<div class="elevator">
+
+
+<div class="category-type"><b>- 热销榜 -</b></div>
+<div>
+<ul  class="normal-nav"><div class="juz2" ><span><a href="#" class="color">全站<br/>热销榜</a></span></div>
+<li ><img src="img/1 (11).png" width="30" height="30"><div class="juz"><a href="#"> 居家榜</a></div>
+<li class="fli"><img src="img/1 (6).png" width="30" height="30"><div class="juz2"><a href="#">鞋包</br>配饰榜</a></div></li>
+<li class="fli"><img src="img/1 (12).png" width="30" height="30"><div class="juz "><a href="#">服饰榜</a></div></li>
+<li class="fli"><img src="img/1 (22).png" width="30" height="30"><div class="juz"><a href="#">电器榜</a></div></li>
+<li class="fli"><img src="img/1 (9).png" width="30" height="30"><div class="juz"><a href="#">洗护榜</a></div></li>
+<li class="fli"><img src="img/1 (10).png" width="30" height="30"><div class="juz"><a href="#">饮食榜</a></div></li>
+<li class="fli"><img src="img/1 (16).png" width="30" height="30"><div class="juz"><a href="#">餐厨榜</a></div></li>
+<li class="fli"><img src="img/1 (25).png" width="30" height="30"><div class="juz"><a href="#">婴童榜</a></div></li>
+<li class="fli"><img src="img/1 (21).png" width="30" height="30"><div class="juz"><a href="#">文体榜</a></div></li>
+<li class="fli"><img src="img/1 (2).png" width="30" height="30"><div class="juz3"><a href="#"> 特色区榜</a></div></li>
+<li class="fli"><img src="img/1 (8).png" width="30" height="30"></li>
+</ul>
+</div>
+
+</div>
+
+
+</body>
+</html>
+
